@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    align-items: center;
+    padding: 0 10px;
+    justify-content: center;
+    min-height: 100vh;
+    background: #343F4F;
+}
+.wrapper{
+    white-space: 1200px;
+}
+.wrapper svg{
+    position: absolute;
+    text-align: center;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 5px;
+    cursor: pointer;
+    
+    top: 50%;
+    transform: translate(-50%);
+
+}
+.wrapper svg:first-child{
+    left: 23px;
+}
+.wrapper svg:last-child{
+    right: -23px;
+}
+.wrapper .carousel {
+    font-size: 0px;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+
+}
+.carousel img{
+    height: 340px;
+    object-fit: cover;
+    margin-left: 14px;
+    width: calc(100% / 3);
+}
+.carousel img:first-child{
+    margin-left: 0px;
+}
